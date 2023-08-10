@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:wght@400;600&family=Raleway&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 20px 0px;
+    background-color: #fff;
+}
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo > img {
+    max-width: 100px;
+}
+header .menu > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+header .menu > ul > li {
+    margin: 0px 20px;
+    border-top: 2px solid transparent;
+    padding: 7px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+header .menu > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+header .menu > ul > li:hover {
+    border-top: 2px solid #38abe4;
+}
+
+.first_block {
+    background-image: url("../images/bg1.jpeg");
+    width: 100%;
+    min-height: 719px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.first_block h1 {
+    font-weight: 500;
+    font-size: 136px;
+    color: #fff;
+    line-height: 0.96em;
+}
+.first_block p {
+    font-family: 'Manuale', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    line-height: 1;
+}
