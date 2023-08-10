@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 header {
@@ -27,6 +29,7 @@ header .menu > ul > li {
     border-top: 2px solid transparent;
     padding: 7px 0px;
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 header .menu > ul > li > a {
     color: #000;
@@ -37,7 +40,7 @@ header .menu > ul > li:hover {
 }
 
 .first_block {
-    background-image: url("../images/bg1.jpeg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.449), rgba(0, 0, 0, 0.593)), url("../images/bg1.jpg");
     width: 100%;
     min-height: 719px;
     background-position: center;
@@ -60,4 +63,71 @@ header .menu > ul > li:hover {
     font-style: italic;
     color: #fff;
     line-height: 1;
+}
+
+.second_block {
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+}
+.second_block .block_post {
+    position: relative;
+}
+.second_block .block_post > h3 {
+    position: absolute;
+    left: -120px;
+    top: -30px;
+    font-weight: 700;
+    color: rgba(138,138,138,0.1);
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 7.5px;
+}
+.second_block .block_post > h2 {
+    color: #2c2c2c;
+    font-family: 'Manuale', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+.second_block .block_post > p {
+    color: #8a8a8a;
+    font-size: 17px;
+    font-weight: 400;
+}
+.second_block .block_post > a {
+    display: flex;
+    align-items: center;
+    color: #2c2c2c;
+    font-family: 'Manuale', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+.second_block .block_post > a > img {
+    width: 15px;
+    margin-left: 5px;
+}
+.second_block .block_post_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.second_block .block_post_image > span {
+    width: 50%;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Manuale', sans-serif;
+    color: #2c2c2c;
+}
+.second_block > .square_block {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 60%;
+    height: 70%;
+    background-color: #fbfbfb;
+    z-index: -1;
 }
