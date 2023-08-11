@@ -146,3 +146,102 @@ header .menu > ul > li:hover {
     background-color: #fbfbfb;
     z-index: -1;
 }
+
+footer {
+    background-color: #101010;
+    padding: 100px 0px;
+}
+footer .col-sm-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+footer .form {
+    position: relative;
+}
+footer .form > h3 {
+    position: absolute;
+    left: -120px;
+    top: -30px;
+    font-weight: 700;
+    color: rgba(138,138,138,0.1);
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 7.5px;
+}
+footer .form > h2 {
+    color: #d3d3d3;
+    font-family: 'Manuale', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+footer .form > p {
+    color: #b8b8b8;
+    font-size: 17px;
+    font-weight: 400;
+}
+footer .form > form {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .form > form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 9px 0px;
+    margin-top: 16px;
+    color: #fff;
+    outline: none;
+}
+footer .form > form textarea {
+    width: 100%;
+    margin-top: 16px;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 9px 0px;
+    min-height: 150px;
+    height: 150px;
+    outline: none;
+    color: #fff;
+}
+footer .form > form .col-xs-12 > button {
+    float: left;
+    margin-top: 26px;
+    font-family: 'Manuale', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 17px 59px 17px 59px;
+    background-color: #e34c38;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.2s;
+}
+footer .form > form .col-xs-12 > button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #0b0b0b;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.copyright p {
+    color: #B8B8B8;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
