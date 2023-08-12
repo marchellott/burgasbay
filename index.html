@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="page-a">
     <header>
         <div class="container">
             <div class="logo">
@@ -69,7 +70,7 @@
                 <figure class="effect-terry">
                     <img src="images/option1.jpg" alt="img1"/>
                     <figcaption>
-                        <h2>Option <span>#1</span></h2>
+                        <h2><a href="option1.html">Option <span>#1</span></a></h2>
                         <p>
                             <a href="#"><i class="fa fa-fw fa-download"></i></a>
                             <a href="#"><i class="fa fa-fw fa-heart"></i></a>
@@ -81,7 +82,7 @@
                 <figure class="effect-terry">
                     <img src="images/option1.jpg" alt="img2"/>
                     <figcaption>
-                        <h2>Option <span>#2</span></h2>
+                        <h2><a href="option2.html">Option <span>#2</span></a></h2>
                         <p>
                             <a href="#"><i class="fa fa-fw fa-download"></i></a>
                             <a href="#"><i class="fa fa-fw fa-heart"></i></a>
@@ -136,5 +137,26 @@
             <p>BurgasBay © . All rights reserved.</p>
         </div>
     </div>
+    </div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script type="text/javascript">
+        barba.init({
+          transitions: [{
+            name: 'opacity-transition',
+            leave(data) {
+              return gsap.to(data.current.container, {
+                opacity: 0
+              });
+            },
+            enter(data) {
+              return gsap.from(data.next.container, {
+                opacity: 0
+              });
+            }
+          }]
+        });
+    </script>
 </body>
 </html>

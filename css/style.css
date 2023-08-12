@@ -249,6 +249,10 @@ header .menu > ul > li:hover {
 .grid figure h2 span {
 	font-weight: 800;
 }
+.grid figure h2 > a {
+    color: #fff;
+    text-decoration: none;
+}
 
 .grid figure h2,
 .grid figure p {
@@ -487,4 +491,48 @@ footer .form > form .col-xs-12 > button:hover {
     font-size: 14px;
     font-weight: 300;
     margin: 0;
+}
+
+/* Options styles */
+
+.option_block {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.option_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.option_header > h1 {
+    margin: 0;
+    font-family: 'Manuale', sans-serif;
+    font-size: 35px;
+}
+.option_header > a > img {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+.option_content .col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+.option_content img {
+    max-width: 60%;
+    width: 100%;
+}
+.option_content h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
