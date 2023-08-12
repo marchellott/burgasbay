@@ -155,7 +155,7 @@ header .menu > ul > li:hover {
 }
 .thirty_block > h3 {
     position: absolute;
-    left: 36%;
+    left: 33%;
     top: 0px;
     font-weight: 700;
     color: rgba(138,138,138,0.1);
@@ -520,7 +520,7 @@ footer .form > form .col-xs-12 > button:hover {
     margin-right: 20px;
 }
 
-.option_content .col-sm-6 {
+.option_content .col-sm-6 > a {
     display: flex;
     justify-content: center;
 }

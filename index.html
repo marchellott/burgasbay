@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-barba="wrapper">
-    <div data-barba="container" data-barba-namespace="page-a">
+<body>
     <header>
         <div class="container">
             <div class="logo">
@@ -63,33 +62,37 @@
         <div class="square_block"></div>
     </div>
     <div class="thirty_block">
-        <h3>Options</h3>
+        <h3>Buildings</h3>
         <div class="container">
             <h2>What houses do we offer?</h2>
             <div class="grid">
                 <figure class="effect-terry">
-                    <img src="images/option1.jpg" alt="img1"/>
-                    <figcaption>
-                        <h2><a href="option1.html">Option <span>#1</span></a></h2>
-                        <p>
-                            <a href="#"><i class="fa fa-fw fa-download"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-heart"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-share"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-tags"></i></a>
-                        </p>
-                    </figcaption>			
+                    <a href="option1.html">
+                        <img src="images/option1.jpg" alt="img1"/>
+                        <figcaption>
+                            <h2><a href="option1.html">Option <span>#1</span></a></h2>
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+                            </p>
+                        </figcaption>	
+                    </a>		
                 </figure>
                 <figure class="effect-terry">
-                    <img src="images/option1.jpg" alt="img2"/>
-                    <figcaption>
-                        <h2><a href="option2.html">Option <span>#2</span></a></h2>
-                        <p>
-                            <a href="#"><i class="fa fa-fw fa-download"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-heart"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-share"></i></a>
-                            <a href="#"><i class="fa fa-fw fa-tags"></i></a>
-                        </p>
-                    </figcaption>			
+                    <a href="option2.html">
+                        <img src="images/option1.jpg" alt="img2"/>
+                        <figcaption>
+                            <h2><a href="option2.html">Option <span>#2</span></a></h2>
+                            <p>
+                                <a href="#"><i class="fa fa-fw fa-download"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-share"></i></a>
+                                <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+                            </p>
+                        </figcaption>	
+                    </a>		
                 </figure>
             </div>
         </div>
@@ -137,26 +140,5 @@
             <p>BurgasBay © . All rights reserved.</p>
         </div>
     </div>
-    </div>
-
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-    <script type="text/javascript">
-        barba.init({
-          transitions: [{
-            name: 'opacity-transition',
-            leave(data) {
-              return gsap.to(data.current.container, {
-                opacity: 0
-              });
-            },
-            enter(data) {
-              return gsap.from(data.next.container, {
-                opacity: 0
-              });
-            }
-          }]
-        });
-    </script>
 </body>
 </html>
